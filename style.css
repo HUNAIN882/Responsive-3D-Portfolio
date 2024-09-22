@@ -86,7 +86,8 @@ p {
     opacity: 0;
     transition: .3s;
 }
-.nav-list li:hover .tooltip {
+.nav-list li:hover .tooltip,
+a:hover .tooltip {
     visibility: visible;
     opacity: 1;
 }
@@ -111,6 +112,12 @@ p {
     background: var(--bg-color);
     padding: 0 10%;
     backface-visibility: hidden;
+}
+.section:nth-child(even) {
+    background: var(--second-bg-color);
+}
+.section.about {
+    transform: translateX(50vw) translateZ(-50vw) rotateY(90deg);
 }
 .home {
     display: flex;
@@ -175,6 +182,10 @@ p {
     display: flex;
     justify-content: center;
     overflow: hidden;
+    transition: 1s;
+}
+.img-box.home-img:hover {
+    box-shadow: 0 0 8rem var(--main-color);
 }
 .img-box img {
     position: absolute;
