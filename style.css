@@ -308,3 +308,6 @@ a:hover .tooltip {
     background: var(--main-color);
     border-radius: 50%;
 }
+.tab-item p {
+    margin-top: 1rem;
+}
