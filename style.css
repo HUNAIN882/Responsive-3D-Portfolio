@@ -251,3 +251,27 @@ a:hover .tooltip {
 .tab-list {
     font-size: 2.5rem;
 }
+.tab-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.tab-grid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(.8);
+}
+.tab-grid.resume-box.active {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    transition: .5s;
+}
