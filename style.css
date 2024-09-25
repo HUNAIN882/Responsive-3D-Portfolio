@@ -46,14 +46,14 @@ p {
 }
 .nav {
     position: fixed;
-    bottom: 0.10rem;
+    bottom: 0.50rem;
     left: 50%;
     transform: translateX(-50%);
     width: 40rem;
     padding: 2rem 0;
     background: var(--nav-bg-color);
     border-radius: 5rem;
-    z-index: 50;
+    z-index: 100;
 }
 .nav .nav-list {
     display: flex;
@@ -62,7 +62,7 @@ p {
 .nav-list  li {
     position: relative;
     display: flex;
-    font-size: 3rem;
+    font-size: 2.5rem;
     cursor: pointer;
     transition: .3s;
 }
@@ -87,7 +87,8 @@ p {
     transition: .3s;
 }
 .nav-list li:hover .tooltip,
-a:hover .tooltip {
+a:hover .tooltip,
+.portfolio-item:hover .work-info {
     visibility: visible;
     opacity: 1;
 }
@@ -373,4 +374,38 @@ section.portfolio {
 }
 .portfolio-item:hover .work-img img {
     transform: scale(1.2);
+}
+.portfolio-item .work-info {
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+.portfolio-item .work-info h4 {
+    line-height: 1;
+}
+.portfolio-item .work-info .tech-used {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--white-color);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+.portfolio-item .portfolio-icon a {
+    position: relative;
+    display: inline-flex;
+    padding: 1rem;
+    background: var(--white-color);
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color: var(--bg-color);
+    transition: .3s;
+}
+.portfolio-item .work-icon a:hover {
+    background: var(--main-color);
+}
+.portfolio-item .work-icon a:nth-child(1) {
+    margin-right: 1rem;
+}
+.portfolio-item .work-icon a:nth-child(1) i {
+    transform: rotate(135deg);
 }
