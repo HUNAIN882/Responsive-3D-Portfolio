@@ -105,6 +105,7 @@ a:hover .tooltip,
     transform-style: preserve-3d;
     transform-origin: 50% 50% -50vw;
     transform: rotateY(-0deg);
+    transition: 2s;
 }
 .section {
     position: absolute;
@@ -124,8 +125,11 @@ a:hover .tooltip,
     transform: translateZ(-100vw) rotateY(-180deg);
     transform-origin: 50%;
 }
-section.portfolio {
+.section.portfolio {
     transform: translateX(-50vw) translateZ(-50vw) rotateY(-90deg);
+}
+.section.contact {
+    visibility: hidden;
 }
 .home,
 .about {
@@ -473,4 +477,14 @@ section.portfolio {
     border-radius: .6rem;
     font-size: 1.6rem;
     color: var(--white-color);
+}
+.contact-form .field-box textarea {
+    height: 20rem;
+    resize: none;
+}
+.contact-form .contact-btn {
+    margin-top: 2rem;
+}
+.contact-form .contact-btn .btn {
+    cursor: pointer;
 }
