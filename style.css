@@ -104,7 +104,7 @@ a:hover .tooltip,
     height: 100%;
     transform-style: preserve-3d;
     transform-origin: 50% 50% -50vw;
-    transform: rotateY(-270deg);
+    transform: rotateY(-0deg);
 }
 .section {
     position: absolute;
@@ -438,4 +438,39 @@ section.portfolio {
 }
 .portfolio-box.service .portfolio-item:hover h4 {
     color: var(--main-color);
+}
+.Contact {
+    padding-top: 2rem;
+    padding-bottom: 18rem;
+}
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70rem;
+}
+.contact-form h3 {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+.contact-form .field-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.contact-form .field-box input,
+.contact-form .field-box textarea {
+    flex: 1 1 30rem;
+    padding: 2rem;
+    background: var(--third-bg-color);
+    border-radius: .6rem;
+    font-size: 1.6rem;
+    color: var(--white-color);
 }
