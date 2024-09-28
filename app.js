@@ -54,3 +54,8 @@ portfolioLists.forEach((list, idx) => {
         portfolioBoxs[idx].classList.add('active');
     });
 });
+
+// Visiblity For Contact Section When Reloading (Cube Reloading Animation)
+setTimeout(() => {
+    sections[4].classList.remove('active');
+}, 1500);
