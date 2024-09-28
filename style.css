@@ -130,6 +130,16 @@ a:hover .tooltip,
 }
 .section.contact {
     visibility: hidden;
+    transition-delay: .5s;
+}
+.section.contact.active {
+    visibility: visible;
+}
+.section.contact.action-contact {
+    transition-delay: 1.5s;
+}
+.section.contact.action-contact.active {
+    transition-delay: 0s;
 }
 .home,
 .about {
